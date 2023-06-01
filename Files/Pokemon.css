@@ -1,0 +1,23 @@
+body{background:linear-gradient(45deg, red, 10%, blue);}
+h1{  font-family: 'Press Start 2P', cursive;}
+#pokemon-container {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.pokemon {
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid black;
+	cursor: pointer;
+	background:linear-gradient(45deg, yellow, green);
+}
+
+.pokemon img {
+	max-width: 100px;
+}
+
+.details {
+	display: none;
+}

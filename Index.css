@@ -1,133 +1,131 @@
-
-body {
-	margin: 0;
-	padding: 0;
-  background-image: url(fondo.jpeg);
-background-size:100%;}
-.poke{
-  background-color: #0044ffb2;
-  font-size: 200%;
-  padding: 10px;
-  box-shadow:  5px 3px 5px inset black;
-  display: flex;
-  width:50%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-left:25%;
-  margin-top: 10%;
-  font-family: 'Press Start 2P', cursive;
-  
-}
-
-header {
-	background-color: #222;
-	color: white;
-	padding: 20px;
-  display: flex;
-  justify-content: center;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 50%;
-}
-
-h1 {
-	margin: 0;
-}
-
-main {
-	margin: 20px;
-}
-
-section {
-	margin-bottom: 20px;
+.textbox {
+  background-color: #ff00de;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 125%;
+  padding: 1%;
+  width:83%
 }
 
 h2 {
-	margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.logo {
+  border-radius: 50%;
+  border: black 2px solid;
+  width: 25%;
+}
+
+.neon-text {
+  color: #000000;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 35px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  animation: neon-animation 3.5s ease-in-out infinite alternate;
+  width: 90%;
+  font-size: 450%;
+  padding: 1%;
+  padding-left: 6%;
+  font-family: 'Russo One', sans-serif;
+  margin-left: 4%;
+}
+
+img {
+  width: 20.5%;
+  border-radius: 50%;
+  margin-right: 5%;
+  border: #000000 solid 2px;
+}
+
+
+@keyframes neon-animation {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 35px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  100% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #39ff14, 0 0 70px #39ff14, 0 0 80px #39ff14, 0 0 100px #39ff14, 0 0 150px #39ff14;
+  }
+}
+
+.description {
+  font-family: 'Russo One', sans-serif;
+  font-size: 200%;
+}
+
+h3 {
+  font-size: 200%;
+  font-family: 'Russo One', sans-serif;
+}
+
+object {
+  width: 50%;
+  height: 80vh;
+}
+
+div {
+  margin-left: 10%;
 }
 
 .button {
-  font-family: 'Press Start 2P', cursive;
-  min-width: 300px;
-  min-height: 60px;
-  font-size: 22px;
-  text-transform: uppercase;
-  letter-spacing: 1.3px;
-  font-weight: 700;
-  background: linear-gradient(90deg, rgb(16, 235, 205) 0%, rgb(42, 192, 177) 100%);
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f41ef4;
   border: none;
-  border-radius: 1000px;
-  box-shadow: 12px 12px 24px rgba(118, 233, 221, 0.64);
-  transition: all 0.5s ease-in-out 0s;
-  cursor: pointer;
-  outline: none;
-  position: relative;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
   padding: 10px;
-  color:black;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 
-button::before {
-  content: '';
-  border-radius: 1000px;
-  min-width: calc(300px + 12px);
-  min-height: calc(60px + 12px);
-  border: 6px solid #00FFCB;
-  box-shadow: 0 0 60px rgba(10, 212, 172, 0.64);
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   opacity: 0;
-  transition: all .3s ease-in-out 0s;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
 
-.button:hover,
-.button:focus {
-  color: #313133;
-  transform: translateY(-6px);
+.button:hover span {
+  padding-right: 25px;
 }
 
-button:hover::before,
-button:focus::before {
-  opacity: 2;
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
-button::after {
-  content: '';
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  border: 6px solid #4bb19c;
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: ring 1.5s infinite;
+h4 {
+  font-family: 'Russo One', sans-serif;
 }
 
-button:hover::after,
-button:focus::after {
-  animation: none;
-  display: none;
+body {
+  background: purple;
+}
+div {
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 
-@keyframes ring {
-  0% {
-    width: 30px;
-    height: 30px;
-    opacity: 1;
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+    width: 300%
   }
-  100% {
-    width: 300px;
-    height: 300px;
-    opacity: 0;
+
+  to {
+    margin-right: 0%;
+    width: 100%;
   }
 }

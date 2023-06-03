@@ -1,5 +1,5 @@
 .textbox {
-  background-color: #ff00de;
+  background-color: #e770d7;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-size: 125%;
   padding: 1%;
@@ -69,7 +69,7 @@ div {
 .button {
   display: inline-block;
   border-radius: 4px;
-  background-color: #f41ef4;
+  background-color: #ff81ff;
   border: none;
   color: #ffffff;
   text-align: center;
@@ -111,7 +111,7 @@ h4 {
 }
 
 body {
-  background: purple;
+  background: rgba(255, 98, 216, 0.89);
 }
 div {
   animation-duration: 3s;
@@ -126,22 +126,6 @@ div {
 
   to {
     margin-right: 0%;
-    width: 100%;
-  }
-}
-div {
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%
-  }
-
-  to {
-    margin-left: 0%;
     width: 100%;
   }
 }
